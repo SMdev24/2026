@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UX Writing portfolio showcasing content strategy and microcontent projects">
+    <title>Sedrak Margaryan - UX Writing Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <script src="portfolio.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header with Navigation -->
+    <div id="top"></div>
+    <header>
+        <nav  aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Home">
+                <span>SM</span>
+                <span>Design</span>
+            </a>
+            <div class="portfolio">
+                <button class="portfolio-toggle" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
+                    Portfolio <span aria-hidden="true">▾</span>
+                </button>
+                <ul class="portfolio-menu" id="portfolio-menu" aria-label="Portfolio submenu">
+                    <li><a href="ux-writing.html">UX Writing</a></li>
+                    <li><a href="ux-design.html">UX Design</a></li>
+                    <li><a href="#ux-research">UX Research</a></li>
+                </ul>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>                   
+                </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" >
+        <div class="hero-content">
+            <h1>UX Writing Portfolio</h1>
+            <p>Specializing in</p>
+            <h1>Content Strategy<br> & <br> Microcontent</h1>
+            <p>Crafting clear, concise, and user-centered content that enhances digital experiences</p>
+            <div class="hero-buttons">
+                <a href="#latest" class="cta-button">View Writing Samples</a>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About My UX Writing</h2>
+            <div class="about-content">
+                <p>I'm a UX writer with a passion for creating content that guides, informs, and delights users.<br>With expertise in microcopy, content strategy, and information architecture, I help transform complex concepts into clear, actionable language.</p>
+                <br>
+                <p>My approach combines user research with strategic writing to create content that not only meets business goals but also resonates with users on a human level.</p>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="approach" aria-labelledby="approach-heading">
+            <h2 id="approach-heading"></h2>
+            <div class="approach-content">
+                <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=400&fit=crop&crop=face" 
+                     alt="UX writer working on content strategy" 
+                     class="profile-image">
+                <div class="approach-text">
+                    <h2>My Writing Process</h2>
+                    <p>I follow a user-centered writing process that begins with research and ends with measurable results. Every word is chosen with intention and purpose.</p>
+                    <!--<div class="skills-list" role="list" aria-label="UX Writing skills">
+                        <span class="skill-tag" role="listitem">Microcopy</span>
+                        <span class="skill-tag" role="listitem">Content Strategy</span>
+                        <span class="skill-tag" role="listitem">Information Architecture</span>
+                        <span class="skill-tag" role="listitem">Voice & Tone</span>
+                        <span class="skill-tag" role="listitem">Content Audits</span>
+                        <span class="skill-tag" role="listitem">User Research</span>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" aria-labelledby="expertise-heading">
+            <h2 id="expertise-heading" class="visually-hidden">UX Writing Services</h2>
+            <div class="card-box">
+                <article class="card">
+                    <h3>Microcopy</h3>
+                    <ul>
+                        <li>Button text</li>
+                        <li>Error messages</li>
+                        <li>Form labels</li>
+                        <li>Tooltips</li>
+                        <li>Empty states</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Content Strategy</h3>
+                    <ul>
+                        <li>Content audits</li>
+                        <li>Voice & tone guides</li>
+                        <li>Style guides</li>
+                        <li>Content models</li>
+                        <li>SEO optimization</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Information Architecture</h3>
+                    <ul>
+                        <li>Sitemaps</li>
+                        <li>Navigation labels</li>
+                        <li>Taxonomy</li>
+                        <li>Content grouping</li>
+                    </ul>
+                </article>
+            
+                <article class="card">
+                    <h3>Editing & Review</h3>
+                    <ul>
+                        <li>UX Documentation</li>
+                        <li>Content editing</li>
+                        <li>Consistency checks</li>
+                        <li>Accessibility review</li>
+                        <li>Localization prep</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="latest" aria-labelledby="latest-heading">
+            <h2 id="latest-heading">UX Writing Projects</h2>
+            <article class="case-study-card"  aria-labelledby="project-title">
+                <div class="content">
+                    <h1 id="project-title">Empathy Map and UX Audit <br> Project 1</h1>
+            
+                    <ul class="tags"  aria-label="Project categories">
+                        <li class="tag" >UX Research</li>
+                        <li class="tag" >UX Writing</li>
+                    </ul>
+            
+                    <p class="description">
+                        An empathy map created to explore user comfort, usability, and trust within the EasyJet mobile application experience.
+                        Grounded in empathy mapping and user research, this work focuses on understanding users’ emotions, needs, expectations, and pain points throughout their journey
+                        in order to deliver supportive, reassuring interactions.
+                        By analysing behavioural patterns and emotional responses, the empathy map highlights areas of cognitive effort, uncertainty, and reassurance, providing a foundation for
+                        clearer UX design and more intuitive interface decisions. This research-driven approach aims to inform human-centred design solutions that support ease of use, build trust,
+                        and help users feel understood and in control.
+                    </p>
+                    <a href="https://www.canva.com/design/DAG7mbDFAX0/ZetzGZE5tKA4pcwZAbDMqA/view" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Read the Empathy Map
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+                    
+                    <p class="description">
+                        A UX audit of the EasyJet mobile application focused on navigation, information architecture, usability, and content clarity.
+                        The audit evaluates the current experience to identify friction points, usability issues, and opportunities for improvement across user journeys.
+                        Based on established UX principles and user-centred heuristics, the audit provides suggestions for redesigning navigation structures,
+                        improving information hierarchy, and enhancing overall usability. It also includes targeted suggestions for clearer, more empathetic microcopy to support user understanding,
+                        reduce cognitive load, and strengthen trust throughout the experience.
+                    </p>
+                    <a href="https://drive.google.com/file/d/19c82QiXArmKCMjv2RnqBhsTNbFzWaXkP/view?usp=sharing" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Read the UX Audit
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+            </article>
+
+            <article class="case-study-card"  aria-labelledby="project-title">
+                <div class="content">
+                    <h1 id="project-title"> Empathy Map and UX Audit <br> Project 2</h1>
+            
+                    <div class="tags" role="list" aria-label="Project categories">
+                        <span class="tag" role="listitem">UX Researh</span>
+                        <span class="tag" role="listitem">UX Writing</span>
+                    </div>
+
+                    <p class="description">
+                        This empathy map synthesizes deep-dive research into the user’s cognitive and emotional relationship with the PayPal mobile interface, specifically targeting a professional banking mental model.
+                        By moving beyond surface-level interactions, this analysis identifies the critical link between UI clarity and "system trust," uncovering how ambiguous terminology and navigation.
+                        The work focuses on the tension between the app’s minimalism and the user's need for high-performance data auditing and precise feedback. By mapping these behavioral triggers, the study provides
+                        a strategic roadmap for redesigning navigation flows that reduce cognitive friction and replace "trial-and-error" usage with technical assurance. Ultimately, this research informs a human-centered
+                        design that empowers the user to manage complex financial tasks with total command and professional confidence
+                    </p>
+                    <a href="https://www.canva.com/design/DAG9KhoG3UU/2MjVILjIfxX0KlDSXKJ-Xw/view?" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Read the Empathy Map
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+            
+                    <p class="description">
+                        This UX audit provides a diagnostic analysis of the PayPal mobile application, specifically examining the structural integrity of its navigation and the precision of its information architecture. 
+                        Unlike broader research, this evaluation identifies the exact "functional gaps" where current design choices—such as redundant menu links and clustered data visualizations—obstruct the workflow.
+                        The audit pinpoints where "semantic friction" in microcopy leads to user hesitation and a measurable "learning penalty".
+                        The findings transition from identifying individual friction points to proposing a systemic redesign aimed at restoring technical trust and visual order. The core objective is to replace the current
+                        "underguided" experience with a better performing interface that aligns with professional banking mental models. Through these targeted refinements in layout density and terminology, the audit establishes
+                        a framework for an application that prioritizes data auditability, operational speed, and an uncompromising sense of security.
+                    </p>
+            
+                    <a href="https://drive.google.com/file/d/187Qb-sX9sI_Y7IbpxFrqzAPUZoPFehT-/view?usp=sharing" class="cta-button" aria-label="Read the full FinTech onboarding case study">
+                        Read the Ux Audit
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Discuss Your Content Needs</h2>
+        <div class="contact-content">
+            <form action = "https://formspree.io/f/mykgoogg" method="POST">  
+
+                    <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required 
+                            aria-required="true" placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required 
+                            aria-required="true" placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Project Type</label>
+                    <input type="text" id="subject" name="subject" 
+                            placeholder="e.g., Microcopy, Content Strategy, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell me about your project *</label>
+                    <textarea id="message" name="message" required 
+                                aria-required="true" placeholder="Describe your content needs, timeline, and goals..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul class="social-links">
+                <li><a href="https://github.com/SMdev24?tab=repositories" aria-label="GitHub profile">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sedrak-m-69b090155/" aria-label="LinkedIn profile">LinkedIn</a></li>
+                <li><a href="#" aria-label="Twitter profile">Twitter</a></li>
+                <li>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=setomargarian@gmail.com&su=Inquiry from Portfolio"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Email via Gmail"
+                    >
+                        Email
+                    </a>  
+                </li>
+            </ul>
+            <p>&copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#top" 
+       class="floating-back-to-top" 
+       aria-label="Return to top of page"
+       id="backToTopBtn">
+        <span aria-hidden="true">↑</span>
+    </a>
+</body>
+</html>
