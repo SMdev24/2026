@@ -7,7 +7,8 @@
     <title>Sedrak Margaryan - Web Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">    <script src="portfolio.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <script src="portfolio.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,19 +19,20 @@
     <!-- Header with Navigation -->
     <div id="top"></div>
     <header>
+        
         <nav aria-label="Main navigation">
             <a href="#top" class="logo" aria-label="Home">
                 <span>SM</span>
                 <span>Design</span>
             </a>
             <div class="portfolio">
-                <button class="portfolio-toggle" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                <button class="portfolio-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
                     Portfolio <span aria-hidden="true">▾</span>
                 </button>
                 <ul class="portfolio-menu" id="portfolio-menu" aria-label="Portfolio submenu">
-                    <li><a href="ux-writing.html">UX Writing</a></li>
+                    <li><a href="ux-research.html">UX Research</a></li>
                     <li><a href="ux-design.html">UX Design</a></li>
-                    <li><a href="#ux-research">UX Research</a></li>
+                    <li><a href="ux-writing.html">UX Writing</a></li>
                 </ul>
             </div>
             <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -42,6 +44,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        
+    </header>
 <!--
         <nav aria-label="Main navigation" class="nav-layout">
 
@@ -96,7 +100,7 @@
 
         </nav>-->
 
-    </header>
+    
 
 
     <main id="main">
@@ -109,7 +113,7 @@
                 <h1>UX Designer</h1> 
                 <p>crafting beautiful, accessible, and user-friendly digital experiences</p>
                 <div class="hero-buttons">
-                    <a href="#latest" class="cta-button">View My Work</a>
+                    <a href="#projects" class="cta-button">View My Work</a>
                     <a href="#contact" class="cta-button">Hire Me</a>
                 </div>
             </div>
@@ -127,13 +131,12 @@
         </section>
 
         <section id="approach" aria-labelledby="approach-heading">
-            
             <div class="approach-content">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
-                     alt="Professional headshot of Alex Morgan" 
+                <img src="photo.png" 
+                     alt="Professional headshot" 
                      class="profile-image">
                 <div class="approach-text">
-                    <h2>My Approach</h2>
+                    <h2 id="approach-heading">My Approach</h2>
                     <p>User-centred & empathy-driven: I uncover real user needs by carefully listening,
                        observing, and analysing behaviour across different touchpoints. By understanding users’ motivations,
                        frustrations, and expectations, I translate insights into meaningful design decisions that prioritise clarity,
@@ -165,6 +168,7 @@
                         <li>WordPress</li>
                         <li>Front-End Editing</li>
                     </ul>
+                
                 </article>
 
                 <article class="card">
@@ -199,31 +203,31 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section id="latest" aria-labelledby="latest-heading">
-           <h2 id="latest-heading">Latest Work</h2>
-           <article class="case-study-card" aria-labelledby="project-title">
-                <div class="content">
-                    <h1 id="project-title">Empathy Map</h1>
-            
-                    <ul class="tags"  aria-label="Project categories">
-                        <li class="tag" >UX Research</li>
-                        <li class="tag" >UX Writing</li>
-                    </ul>
-            
-                    <p class="description">
-                        An empathy map created to explore user comfort, usability, and trust within the EasyJet mobile application experience.
-                        Grounded in empathy mapping and user research, this work focuses on understanding users’ emotions, needs, expectations, and pain points throughout their journey
-                        in order to deliver supportive, reassuring interactions.
-                        By analysing behavioural patterns and emotional responses, the empathy map highlights areas of cognitive effort, uncertainty, and reassurance, providing a foundation for
-                        clearer UX design and more intuitive interface decisions. This research-driven approach aims to inform human-centred design solutions that support ease of use, build trust,
-                        and help users feel understood and in control.
-                    </p>
-            
-                    <a href="https://www.canva.com/design/DAG7mbDFAX0/ZetzGZE5tKA4pcwZAbDMqA/view" class="cta-button" aria-label="Read the full Empathy App case study">
-                        Read Case Study
-                        <span class="arrow" aria-hidden="true">→</span>
-                    </a>
-                </div>
+        <section id="projects" aria-labelledby="projects-heading">
+           <h2 id="projects-heading">Latest Work</h2>
+           <article class="case-study-card" >
+                
+                <h1>Empathy Map</h1>
+        
+                <ul class="tags"  aria-label="Project categories">
+                    <li class="tag" >UX Research</li>
+                    <li class="tag" >UX Writing</li>
+                </ul>
+        
+                <p class="description">
+                    An empathy map created to explore user comfort, usability, and trust within the EasyJet mobile application experience.
+                    Grounded in empathy mapping and user research, this work focuses on understanding users’ emotions, needs, expectations, and pain points throughout their journey
+                    in order to deliver supportive, reassuring interactions.
+                    By analysing behavioural patterns and emotional responses, the empathy map highlights areas of cognitive effort, uncertainty, and reassurance, providing a foundation for
+                    clearer UX design and more intuitive interface decisions. This research-driven approach aims to inform human-centred design solutions that support ease of use, build trust,
+                    and help users feel understood and in control.
+                </p>
+        
+                <a href="https://www.canva.com/design/DAG7mbDFAX0/Uw4F-G97fnPIv5JGJ9eB1g/view" class="cta-button" aria-label="Read the full Empathy App case study">
+                    Read Case Study
+                    <span class="arrow" aria-hidden="true">→</span>
+                </a>
+                
             </article>
             
         </section>
@@ -234,26 +238,31 @@
         <h2 id="contact-heading">Get In Touch</h2>
         <div class="contact-content">
             <form action = "https://formspree.io/f/mykgoogg" method="POST">
+
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required 
                             aria-required="true" placeholder="Your name">
                 </div>
+
                 <div class="form-group">
                     <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required 
                             aria-required="true" placeholder="your.email@example.com">
                 </div>
+
                 <div class="form-group">
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" placeholder="What's this about?">
                 </div>
+
                 <div class="form-group">
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" required 
                         aria-required="true" placeholder="Your message here..."></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
@@ -262,12 +271,12 @@
 
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <ul class="social-links">
                 <li><a href="https://github.com/SMdev24?tab=repositories" aria-label="GitHub profile">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/sedrak-m-69b090155/" aria-label="LinkedIn profile">LinkedIn</a></li>
-                <li><a href="#" aria-label="Twitter profile">Twitter</a></li>
+                
                 <li>
                     <a
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=setomargarian@gmail.com&su=Inquiry from Portfolio"
@@ -289,6 +298,7 @@
        id="backToTopBtn">
         <span aria-hidden="true">↑</span>
     </a>
+
 
     
 </body>

@@ -7,7 +7,8 @@
     <title>Sedrak Margaryan - Web Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">    <script src="portfolio.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="portfolio.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,18 +20,18 @@
     <div id="top"></div>
     <header>
         <nav aria-label="Main navigation">
-            <a href="#top" class="logo" aria-label="Home">
+            <a href="index.html" class="logo" aria-label="Home">
                 <span>SM</span>
                 <span>Design</span>
             </a>
             <div class="portfolio">
-                <button class="portfolio-toggle" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                <button class="portfolio-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-menu">
                     Portfolio <span aria-hidden="true">▾</span>
                 </button>
                 <ul class="portfolio-menu" id="portfolio-menu" aria-label="Portfolio submenu">
-                    <li><a href="ux-writing.html">UX Writing</a></li>
+                    <li><a href="ux-research.html">UX Research</a></li>
                     <li><a href="ux-design.html">UX Design</a></li>
-                    <li><a href="#ux-research">UX Research</a></li>
+                    <li><a href="ux-writing.html">UX Writing</a></li>
                 </ul>
             </div>
             <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -45,35 +46,157 @@
 
     </header>
 
+     <section class="hero" >
+        <div class="hero-content">
+            <h1>Visual Strategy & Product Design</h1>
+            <p>Specializing in</p>
+            <h1>Interface Systems<br> & <br> Visual Problem-Solving</h1>
+            <p>Crafting intuitive, high-impact visual solutions that bridge the gap between user needs and 
+               business goals. From building scalable design systems in Figma to executing deep-dive 
+               redesigns that optimize information architecture and visual hierarchy.</p>
+            <div class="hero-buttons">
+                <a href="#project-menu" class="cta-button">View Design Samples</a>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-menu"aria-label="project-menu" >
+        <div class="project-box">
+            <a href="#projects" class="cta-button">Design</a>
+            <a href="#projects2" class="cta-button">Redesign</a>
+        </div>
+    </section>
+
 
     <main id="main">
 
         
 
         <!-- Portfolio Section -->
-        <section id="latest" aria-labelledby="latest-heading">
-           <h2 id="latest-heading">Design Projects</h2>
-           <article class="case-study-card" aria-labelledby="project-title">
-                <div class="content">
-                    <h1 id="project-title">Buzzly</h1>
-                    <a href="https://www.figma.com/design/Eqv02XgFql0MiULTaPmBKF/figma?node-id=108-1708&t=qinff8sUgKi0sKMu-1" class="cta-button" aria-label="Read the full Empathy App case study">
+        <section id="projects" aria-labelledby="projects-heading">
+
+           <h2 id="projects-heading">Design Projects</h2>
+
+           <article class="case-study-card">
+                
+                    <h1>AllBright</h1>
+                    <a href="https://www.figma.com/proto/Uqy7TBeeSvZ3O3bBeCin7c/AllBright--Ex-?node-id=127-3551&p=f&viewport=815%2C230%2C0.05&t=6ncmY46ho8tK2sM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=127%3A3551&page-id=0%3A1" class="cta-button" aria-label="Read the full Empathy App case study">
                         Open Design
                         <span class="arrow" aria-hidden="true">→</span>
                     </a>
-                </div>
+               
             </article>
 
-            <article class="case-study-card" aria-labelledby="project-title">
-                <div class="content">
-                    <h1 id="project-title">Music App</h1>
-                    <a href="https://www.figma.com/design/anuOJfCdhLt5ytylUbdpmo/player-latest--Copy-?node-id=48-2&t=Lj0PIi3XT2oOW1gg-1" class="cta-button" aria-label="Read the full Empathy App case study">
+           <article class="case-study-card">
+                
+                    <h1>Buzzly</h1>
+                    <a href="https://www.figma.com/design/Eqv02XgFql0MiULTaPmBKF/figma?node-id=3110-30&t=tBArhhWsVC4lASul-1" class="cta-button" aria-label="Read the full Empathy App case study">
                         Open Design
                         <span class="arrow" aria-hidden="true">→</span>
                     </a>
-                </div>
+               
+            </article>
+
+            <article class="case-study-card">
+                
+                    <h1>Music App</h1>
+                    <a href="https://www.figma.com/design/DkSChaxMO0jTqvQIjSIhvU/player-exam?node-id=48-2&t=qKg8gzL5Fa1qdokI-1" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+            <article class="case-study-card">
+                
+                    <h1>Random</h1>
+                    <a href="https://www.figma.com/design/5pLYOJoQLwUoxNGAoYJ4Xw/Goal-tracker?node-id=0-1&t=sv1VXo2h4z4eojq7-1" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="https://docs.google.com/document/d/1Oki2IjOdGTUXVpfwgKbkLVScCoMoZ0NSVXhXvg1K7Wc/preview" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Read Report
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
             </article>
 
         </section>
+
+        <section id="projects2" aria-labelledby="projects2-heading">
+           <h2 id="projects2-heading">Redesign Projects</h2>
+
+           <article class="case-study-card">
+               
+                    <h1>Ryanair</h1>
+                    <a href="https://www.figma.com/design/RduKtCvdl5EzxRcv7BxZjc/Ryanair?node-id=0-1&t=jtL5XzgjkNb0vuI8-1" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1MeZbS630A6j042f94obruzebXZvS5_dJOmOgB9xtG9U/preview" 
+                        class="cta-button">
+                        Read Accessibility Report
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+             <article class="case-study-card">
+               
+                    <h1>PayPal</h1>
+                    <a href="https://www.figma.com/design/R9VlJ9WN7SUThh3h6LmF82/PP?node-id=0-1&t=zRxUkTREYTmn4ssZ-1" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1tWchB2M9XuVOVEWLrimq7eYlIBL31AWK1XvDFcqwpvU/preview" 
+                        class="cta-button">
+                        Read Optimisation Report
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+
+           <article class="case-study-card">
+               
+                    <h1>Spotify</h1>
+                    <a href="https://www.figma.com/proto/FwYeQBzXyqN0jZ1L5YeMtY/Spotify-exam-copy?node-id=40000106-6167&p=f&viewport=170%2C11%2C0.08&t=N81bn7TkASpHxVnj-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=40000106%3A6167&page-id=40000106%3A6165" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="https://docs.google.com/document/d/1pAYEdHCLNeXcLsxYp4HEo43DqaBAArZ2jlh8qBh5etM/preview" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Read Report
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+           <article class="case-study-card">
+               
+                    <h1>easyJet</h1>
+                    <a href="https://docs.google.com/document/d/126jnOJZg7JwvxPeoFOymG23ydyBve-50tX6jBIX98mU/preview" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Design
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+            <article class="case-study-card">
+               
+                    <h1>Pegasus. Eu Remote Jobs</h1>
+                    <a href="https://docs.google.com/document/d/1g90AqdLPMlbLEnviyItMiL2JwNCq8UW2idXJmu-zbAU/preview" class="cta-button" aria-label="Read the full Empathy App case study">
+                        Open Audit
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </a>
+               
+            </article>
+
+
+        </section>
+
     </main>
 
     <!-- Contact Section -->
@@ -100,7 +223,7 @@
                     <textarea id="message" name="message" required 
                         aria-required="true" placeholder="Your message here..."></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
@@ -109,12 +232,12 @@
 
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <ul class="social-links">
                 <li><a href="https://github.com/SMdev24?tab=repositories" aria-label="GitHub profile">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/sedrak-m-69b090155/" aria-label="LinkedIn profile">LinkedIn</a></li>
-                <li><a href="#" aria-label="Twitter profile">Twitter</a></li>
+               
                 <li>
                     <a
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=setomargarian@gmail.com&su=Inquiry from Portfolio"
